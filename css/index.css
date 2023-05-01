@@ -1,0 +1,149 @@
+/* Index Page formatting
+June 15, 2022
+*/
+
+* {
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+html {
+	scroll-behavior: smooth;
+}
+/* width and height of the scrollbar */
+::-webkit-scrollbar {
+	width: 11px;
+  }
+  
+/* color of the scrollbar track */
+::-webkit-scrollbar-track {
+	background: transparent;
+  }
+  
+/* color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+	background: floralwhite;
+	border-radius: 15px;
+  }
+  
+body {
+	background-color: rgb(31, 31, 31);
+	color: floralwhite;
+	
+}
+/*Nav Bar formatting*/
+nav {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    overflow: hidden;
+	min-width: 100vw;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0));
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+nav div {
+	display: flex;
+	justify-content: space-evenly;
+}
+/* Nav bar option format */
+nav a,
+nav a:visited {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1em 0;
+    color: floralwhite;
+    /*text-shadow: 1.5px 2px 3.5px rgba(0, 0, 0, 0.5);*/
+    transition: opacity 0.25s ease-in-out;
+	font-size: 1.25rem;
+}
+nav a:hover {
+    opacity: 0.5;
+}
+nav a:active {
+    opacity: 0.5;
+}
+
+#intro {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: floralwhite;
+	background-image: url(../img/opiumWarsCropped.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+  }
+#intro::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60vh;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+#intro h1 {
+	margin: 0 auto;
+	text-align: center;
+	text-shadow: 1px 1px 7px rgba(0,0,0,0.85), -2px -2px 7px rgba(0,0,0,0.85);
+	font-size: 3rem;
+	padding: 1em;
+	z-index: 9998;
+}
+#intro div {
+	width: 60%;
+	padding: 1em;
+	text-shadow: 1px 1px 7px rgba(0,0,0,0.85), -2px -2px 7px rgba(0,0,0,0.85);
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	z-index: 9998;
+}
+
+.sectionWrapper {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+.mapTextWrapper {
+	width: 25%;
+	padding-top: 1%;
+	display: flex;
+	flex-direction: column;
+}
+.mapClass {
+	font-size: 1.75em;
+}
+.mapTitle {
+	font-size: 1.5em;
+}
+.mapCaption {
+	font-size: 1.25em;
+}
+
+.mapImageWrapper {
+	max-width: 65%;
+}
+
+.imageA {
+	width: 100%;
+}
+
+.imageB {
+	width: 100%;
+}
+
+/*
+@media screen and (orientation: portrait) {
+	*/

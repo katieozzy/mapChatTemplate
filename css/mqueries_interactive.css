@@ -1,0 +1,177 @@
+/* Extra small devices (480px and down) */
+@media only screen and (max-width: 480px) {
+
+  /*Formatting for the top bar, which contains the logo*/
+  #logo {
+    height: 1.05em;
+  }
+
+  /* Home button formatting */
+  a.Rhome {
+    padding: 4px 8px;
+    font-size: 8px;
+  }
+
+  .source {
+    padding-top: 0;
+    font-size: 9px;
+  }
+
+  .instruct {
+    font-size: .5rem;
+    padding-right: 0;
+    padding-top: 1.5%;
+  }
+}
+
+/* Small devices (width 480px-610px) */
+@media only screen and (min-width: 480px) and (max-width: 610px) {
+
+  /*Formatting for the top bar, which contains the logo*/
+  #logo {
+    height: 1.2em;
+  }
+
+  /* Home button formatting */
+  a.Rhome {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .source {
+    padding-top: 0;
+    font-size: 13px;
+  }
+
+  .instruct {
+    font-size: .65rem;
+    padding-right: 0;
+    padding-top: 1.5%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 610px-767px) */
+@media only screen and (min-width: 610px)and (max-width: 767px) {
+
+  /*Formatting for the top bar, which contains the logo*/
+  #logo {
+    height: 1.2em;
+  }
+
+  /* Home button formatting */
+  a.Rhome {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .source {
+    padding-top: 1%;
+    font-size: 15px;
+  }
+
+  .instruct {
+    font-size: .65rem;
+    padding-right: 0;
+    padding-top: 1.5%;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px-991px) */
+@media only screen and (min-width: 767px)and (max-width: 991px) {
+
+  /*Formatting for the top bar, which contains the logo*/
+  #logo {
+    height: 1.5em;
+  }
+
+  /* Home button formatting */
+  a.Rhome {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .source {
+    padding-top: 1%;
+    font-size: 16px;
+  }
+
+  .instruct {
+    font-size: .85rem;
+    padding-right: 0;
+    padding-top: 1.5%;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 991px-1250px) */
+@media only screen and (min-width: 991px) and (max-width: 1250px) {
+
+  /*Formatting for the top bar, which contains the logo*/
+  #logo {
+    height: 2em;
+  }
+
+  /* Home button formatting */
+  a.Rhome {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .source {
+    padding-top: 1%;
+    font-size: 17px;
+  }
+
+  .instruct {
+    font-size: .85rem;
+    padding-right: 0;
+    padding-top: 1.5%;
+  }
+
+  /* Home button formatting */
+  .returnbutton {
+    float: left;
+  }
+
+  a.Rhome {
+    border-radius: 4px;
+    padding: 6px 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(233, 233, 233);
+    color: #0E1116;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1250px-3000px) */
+@media only screen and (min-width: 1250px) and (max-width: 3000px) {
+
+  /*Formatting for the top bar, which contains the logo*/
+  #logo {
+    height: 2.4em;
+  }
+  /* Home button formatting */
+  .returnbutton {
+    float: left;
+    margin-bottom: -.5%;
+  }
+
+  a.Rhome {
+    border-radius: 4px;
+    padding: 8px 18px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(233, 233, 233);
+    color: #0E1116;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+  .source {
+    padding-top: 1%;
+    font-size: 18px;
+  }
+}

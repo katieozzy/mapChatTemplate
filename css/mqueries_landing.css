@@ -1,0 +1,235 @@
+/* Extra small devices (480px and down) */
+@media only screen and (max-width: 480px) {
+	/*Formatting for the top bar, which contains the logo*/
+	.logo-container {
+		height: 1.05em;
+	}
+
+	#logo {
+		height: 1.05em;
+	}
+
+	.flex-container {
+		line-height: 18px;
+		height: 62vh;
+	}
+
+	/*Formatting for the title text*/
+	.title {
+		font-size: 21px;
+		padding-top: 2.5%;
+		padding-bottom: 1%;
+		width: 92%;
+	}
+
+	/*button formatting*/
+	.button {
+		font-size: 4px;
+		padding-top: 0;
+	}
+
+	a.home {
+		padding: 4px 7px;
+	}
+	a.home:hover {
+		padding: 4px 7px;
+	}
+
+	/*Credit boxes*/
+	.credits {
+		font-size: 0.3rem;
+		padding-top: 1%;
+	}
+}
+
+/* Small devices (width 480px-610px) */
+@media only screen and (min-width: 480px) and (max-width: 610px) {
+	.logo-container {
+		height: 1.3em;
+	}
+
+	/*Formatting for the top bar, which contains the logo*/
+	#logo {
+		height: 1.2em;
+	}
+
+	.flex-container {
+		line-height: 26px;
+		height: 68vh;
+	}
+
+	/*Formatting for the title text*/
+	.title {
+		font-size: 29px;
+	}
+
+	/*button formatting*/
+	.button {
+		font-size: 6px;
+		padding-top: 0.5%;
+	}
+
+	a.home {
+		padding: 5px 9px;
+	}
+	a.home:hover {
+		padding: 5px 9px;
+	}
+
+	/*Credit boxes*/
+	.credits {
+		font-size: 8px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 610px-767px) */
+@media only screen and (min-width: 610px) and (max-width: 767px) {
+	.logo-container {
+		height: 1.3em;
+	}
+
+	/*Formatting for the top bar, which contains the logo*/
+	#logo {
+		height: 1.2em;
+	}
+
+	.flex-container {
+		line-height: 36px;
+		font-size: 30px;
+		height: 68vh;
+	}
+
+	/*Formatting for the title text*/
+	.title {
+		font-size: 40px;
+		padding-bottom: 1%;
+	}
+
+	/*button formatting*/
+	.button {
+		font-size: 10px;
+		padding-top: 0.75%;
+	}
+
+	a.home {
+		border-radius: 3px;
+		padding: 8px 15px;
+	}
+
+	/*Credit boxes*/
+	.credits {
+		font-size: 9px;
+	}
+}
+
+/* Medium devices (landscape tablets, 767px-991px) */
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+	/*Formatting for the top bar, which contains the logo*/
+	#logo {
+		height: 1.5em;
+	}
+
+	.flex-container {
+		line-height: 44px;
+		font-size: 30px;
+	}
+
+	/*Formatting for the title text*/
+	.title {
+		font-size: 52px;
+		width: 82%;
+	}
+
+	/*button formatting*/
+	.button {
+		font-size: 10px;
+		padding-top: 0.75%;
+	}
+
+	a.home {
+		border-radius: 3px;
+		padding: 9px 28px;
+	}
+
+
+	/*Credit boxes*/
+	.credits {
+		font-size: 11px;
+	}
+}
+
+/* Large devices (laptops/desktops, 991px-1250px) */
+@media only screen and (min-width: 991px) and (max-width: 1250px) {
+	/*Formatting for the top bar, which contains the logo*/
+	#logo {
+		height: 2em;
+		width: auto;
+		position: relative;
+	}
+
+	.flex-container {
+		line-height: 58px;
+	}
+
+	/*Formatting for the title text*/
+	.title {
+		font-size: 72px;
+		padding-bottom: 0;
+	}
+	/*button formatting*/
+	.button {
+		font-size: 18px;
+		padding-top: 0.75%;
+	}
+
+	/*basic button formatting*/
+	a.home {
+		border-radius: 4px;
+		padding: 8px 22px;
+	}
+
+
+	/*Credit boxes*/
+	.credits {
+		font-size: 16px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1250px-3000px) */
+@media only screen and (min-width: 1250px) and (max-width: 3000px) {
+	.flex-container {
+		line-height: 65px;
+	}
+
+	/*Formatting for the top bar, which contains the logo*/
+	.logo-container {
+		height: 2.4em;
+		width: auto;
+		position: relative;
+	}
+
+	/*Formatting for the top bar, which contains the logo*/
+	#logo {
+		height: 2.4em;
+	}
+
+	/*Formatting for the title text*/
+	.title {
+		font-size: 90px;
+		padding-bottom: 0;
+		width: 90%;
+		line-height: 80px;
+	}
+
+	/*button formatting*/
+	.button {
+		font-size: 18px;
+		padding-top: 1%;
+	}
+	/*basic button formatting*/
+	a.home {
+		border-radius: 4px;
+		padding: 10px 25px;
+	}
+
+}

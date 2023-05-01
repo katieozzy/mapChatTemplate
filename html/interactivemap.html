@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MacLean Collection Map Chat">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Katie Osborne">
+  <title>Map Chat</title>
+  
+  <!--Stylesheet-->
+  <link href="../css/interactivemap.css" rel="stylesheet">
+  <link href="../css/mqueries_interactive.css" rel="stylesheet">
+  
+  <!-- Leaflet 
+  By: Vladimir Agafonkin, 2010
+  URL: https://leafletjs.com/index.html
+-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../js/leaflet_default.js"></script> 
+
+  <!--Alert that appears when user has no script enaabled on their browser-->
+  <noscript> 
+    alert("You do not have JavaScript enabled on this browser. You can still use the website,
+    but some functionality will not work. You will have a better experience if you enable JavaScript");
+   </noscript>
+
+ </head>
+<body>
+
+<!--Check for a mobile device-->
+<div id = "mobileDetector" class = "warning">
+  <p id="warningText">This website is optimized for a larger screen size. Please use landscape mode, expand your browser window, or switch to a larger device.</p>
+</div>
+
+<!-- LEAFLET ZOOM -->
+<div class="returnbutton"><a class="Rhome" href = "landingpage.html">Return</a>
+  <h1 class="instruct">Use your mouse to zoom<br>into details of the map</h1>
+</div>
+<a href="https://www.macleancollection.com/" id="macleanlink" target="_blank" rel="noopener noreferrer"><img id="logo" src= "../img/whitelogo.png"></a>
+
+<div id="scroll" align="right">
+  <img id="image1" loading="eager" src="../img/17363_stitch_fullsize.jpg" />
+
+ <!--Script to zoom-->
+ <script defer type="text/javascript">
+     ;(function($) {
+       $(document).ready(function() {
+         var $img = $("#image1").imgViewer2();
+       });
+     })(jQuery);
+ </script> 
+</div> 
+
+<!--Source for the image-->
+<div class="source">
+  <i>Map of the World</i>, Japan, late 18th or early 19th century, manuscript, hanging scrolls (3), 
+  ink and color on paper, MacLean Collection, MC17363
+</div>
+
+</body>
+</html>
