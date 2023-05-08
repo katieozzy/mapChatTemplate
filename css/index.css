@@ -4,7 +4,7 @@ June 15, 2022
 
 * {
 	box-sizing: border-box;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 html {
 	scroll-behavior: smooth;
@@ -143,6 +143,30 @@ nav a:active {
 .imageB {
 	width: 100%;
 }
+
+/* Zoom in for Large Map */
+a.leaflet-control-zoom-in {
+	background-color: transparent;
+  }
+  
+  a.leaflet-control-zoom-out {
+	background-color: transparent;
+  }
+  
+  .leaflet-bar a.leaflet-disabled {
+	background-color: transparent;
+	color: black;
+  }
+  
+  /*Large Map Image*/
+  #image1 {
+	width: 100%;
+  }
+  
+  #scroll {
+	width: 90%;
+	margin: auto;
+  }
 
 /*
 @media screen and (orientation: portrait) {

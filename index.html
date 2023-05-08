@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MacLean Collection Map Chat">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Katie Osborne">
     <title>Map Chat</title>
+    <!-- Leaflet 
+      By: Vladimir Agafonkin, 2010
+      URL: https://leafletjs.com/index.html
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
+    <script type="text/javascript" src="js/leaflet_default.js"></script> 
+  
+    <!--Primary stylesheet-->
+    <link href="css/index.css" rel="stylesheet">
     <!--Alert that appears when user has no script enaabled on their browser-->
     <noscript> 
       alert("You do not have JavaScript enabled on this browser. You can still use the website,
       but some functionality will not work. You will have a better experience if you enable JavaScript");
     </noscript>
-    <!--Primary stylesheet-->
-    <link href="css/index.css" rel="stylesheet">
-      <!--Java script intersection observer for righthand side-->
-    <script src= "js/jquery-3.6.4.min.js" defer></script>
   </head>
   <body>
     <header>  
@@ -51,11 +59,11 @@
           <h3 class="mapTitle">Daqing tongshu zhigong wanguo jingwei diqiu shi fangyu gujin tu 大清統屬職貢萬國經緯地球式方輿古今圖  (1800) by Zhuang Tingfu 莊廷尃. </h3>
           <p class="mapCaption">Zhuang’s map was produced at the height of Qing power. After a long string of successful military conquests under the reign of the Qianlong Emperor (r. 1735-1796), the empire was expanded to an unprecedented size. </p>
         </span>
-        <span class="mapImageWrapper">
+        <div class="mapImageWrapper">
           <div>
-            <img class="imageA" src="img/mapA_33486.png">
+            <img id="image1" class="imageA" loading="eager" src="img/mapA_33486.png">
           </div>
-        </span>
+        </div>
       </section>
       <section class="sectionWrapper" id="mapB">
         <span class="mapTextWrapper">
@@ -65,7 +73,7 @@
         </span>
         <span class="mapImageWrapper">
           <div>
-            <img class="imageB" src="img/mapB_31582.png">
+            <img class="imageB" id="image2" src="img/mapB_31582.png">
           </div>
         </span>
       </section>
@@ -83,8 +91,15 @@
       </section> -->
     </main>
 
-
- 
+ <!--Script to zoom-->
+ <script defer type="text/javascript">
+  ;(function($) {
+    $(document).ready(function() {
+      var $img = $("#image1").imgViewer2();
+      var $img = $("#image2").imgViewer2();
+    });
+  })(jQuery);
+</script>  
 
 
 </body>
