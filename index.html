@@ -11,13 +11,11 @@
       By: Vladimir Agafonkin, 2010
       URL: https://leafletjs.com/index.html
     -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-    <script type="text/javascript" src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script> 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> 
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+    <script type="text/javascript" src="js/leaflet.js"></script> 
     <script type="text/javascript" src="js/leaflet_default.js"></script> 
-  
-    <!--Primary stylesheet-->
+    <link href="css/leaflet.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <!--Alert that appears when user has no script enaabled on their browser-->
     <noscript> 
@@ -32,12 +30,13 @@
           <a class="#" href="#intro">Home</a>
           <a class="#" href="#mapA">Map A</a>
           <a class="#" href="#mapB">Map B</a>
-          <a class="#" href="#">Comparisons</a>
+          <a class="#" href="#comparisons">Comparisons</a>
+          <!-- 
           <a class="#" href="#">Barbarian's World</a>
           <a class="#" href="#">Retitling</a>
           <a class="#" href="#">Opening Paragraphs</a>
-          <a class="#" href="#">Conclusion</a>
-          <a class="#" href="#">Credits</a>
+          -->
+          <a class="#" href="#conclusion">Conclusion</a>
           </div>
       </nav>
     </header> 
@@ -53,54 +52,89 @@
           A comparison of two maps within the Maclean Collection help illustrate these revisions.
         </div>
       </section>
+      
       <section class="sectionWrapper" id="mapA">
-        <span class="mapTextWrapper">
-          <h1 class="mapClass">Map A</h1>
+        <div class="mapImageWrapper">
+          <img id="image1" class="imageA" loading="eager" src="img/mapA_29773.jpg">
+        </div>
+        <div class="mapTextWrapper">
+          <h1 class="sectionHeader">Map A</h1>
           <h3 class="mapTitle">Daqing tongshu zhigong wanguo jingwei diqiu shi fangyu gujin tu 大清統屬職貢萬國經緯地球式方輿古今圖  (1800) by Zhuang Tingfu 莊廷尃. </h3>
           <p class="mapCaption">Zhuang’s map was produced at the height of Qing power. After a long string of successful military conquests under the reign of the Qianlong Emperor (r. 1735-1796), the empire was expanded to an unprecedented size. </p>
-        </span>
-        <div class="mapImageWrapper">
-          <div>
-            <img id="image1" class="imageA" loading="eager" src="img/mapA_33486.png">
-          </div>
         </div>
       </section>
       <section class="sectionWrapper" id="mapB">
-        <span class="mapTextWrapper">
-          <h1 class="mapClass">Map B</h1>
+        <div class="mapImageWrapper">
+          <img class="imageB" id="image2" src="img/mapB_31582.jpg">
+        </div>
+        <div class="mapTextWrapper">
+          <h1 class="sectionHeader">Map B</h1>
           <h3 class="mapTitle">Wanguo yutu 萬國輿圖 (1858) by an unknown maker. </h3>
           <p class="mapCaption">The 1858 map was produced in the midst of the Second Opium War (1856-60). It is based on Zhuang’s 1800 map, visibly reproducing many elements like the inscriptions in the outer circles and the pair of straight ecliptic lines cutting diagonally across the hemispheres.</p>
-        </span>
-        <span class="mapImageWrapper">
-          <div>
-            <img class="imageB" id="image2" src="img/mapB_31582.png">
-          </div>
-        </span>
-      </section>
-      <!--<section id="comparisons">
-        <div>
-          Both maps were discussed in an earlier map chat by the curator of the collection. This present map chat dives deeper into a previously untouched area of comparison – each mapmaker’s geopolitical vision.
-          (Option A) As you drag the slider across, notice how much more detail the 1858 map gives about foreign nation-states as opposed to the 1800 one.
-          (Option B) The 1858 map gives much more detail about foreign nation-states as opposed to the 1800 one.
-          In Zhuang Tingfu’s map, only the coordinates of major cities within the Qing were listed in his preface and subsequently circled out within the map. Meanwhile, foreign capitals and cities elsewhere were not shown. Toponyms of foreign places were written out over their general areas as no territorial borders between nation-states were drawn up. 
-          In other words, Zhuang Tingu was chiefly interested in how the European geographic coordinate system and use of graticules could locate Qing China and its domain within the wider world.
-          Conversely, the 1858 mapmaker showed more interest in the world beyond Qing China. Within his preface, he only listed out the coordinates of the major cities in Saiwai 塞外 (beyond the Great wall) and Xinjiang新疆 (new territories). Yet, cities all over the world were circled. 
-          All provincial and country names including China’s 中華囯 were written in either red or black characters within the confines of their territorial borders. Political boundaries between nation-states and continents were drawn using dotted black lines overlaid with bolded red ones. 
-          Such a line is seen stretching across both hemispheres to separate Oceania 啊撒尼洲 from Asia 亚细亚 and the Americas 亞墨利加洲. This suggests the use of updated sources since the name Oceania had only been coined roughly two decades prior to the Wanguo yutu by French explorer Dumont d’Urville in the early 1830s.  
         </div>
-      </section> -->
-    </main>
+      </section>
+      <!--SLIDER/MAP TRANSITION SECTION-->
+      <section class="sectionWrapperColumn" id="comparisons">
+          <div class="mapTextWrapperColumn">
+            <h1 class="sectionHeader">Comparisons</h1>
+            <p class="mapCaption mapCaptionScroll">
+              Both maps were discussed in an earlier map chat by the curator of the collection. This present map chat dives deeper into a previously untouched area of comparison – each mapmaker’s geopolitical vision.
+            In Zhuang Tingfu’s map, only the coordinates of major cities within the Qing were listed in his preface and subsequently circled out within the map. Meanwhile, foreign capitals and cities elsewhere were not shown. Toponyms of foreign places were written out over their general areas as no territorial borders between nation-states were drawn up. 
+            In other words, Zhuang Tingu was chiefly interested in how the European geographic coordinate system and use of graticules could locate Qing China and its domain within the wider world.
+            Conversely, the 1858 mapmaker showed more interest in the world beyond Qing China. Within his preface, he only listed out the coordinates of the major cities in Saiwai 塞外 (beyond the Great wall) and Xinjiang新疆 (new territories). Yet, cities all over the world were circled. 
+            All provincial and country names including China’s 中華囯 were written in either red or black characters within the confines of their territorial borders. Political boundaries between nation-states and continents were drawn using dotted black lines overlaid with bolded red ones. 
+            Such a line is seen stretching across both hemispheres to separate Oceania 啊撒尼洲 from Asia 亚细亚 and the Americas 亞墨利加洲. This suggests the use of updated sources since the name Oceania had only been coined roughly two decades prior to the Wanguo yutu by French explorer Dumont d’Urville in the early 1830s. 
 
- <!--Script to zoom-->
- <script defer type="text/javascript">
-  ;(function($) {
-    $(document).ready(function() {
-      var $img = $("#image1").imgViewer2();
-      var $img = $("#image2").imgViewer2();
-    });
-  })(jQuery);
-</script>  
+            <br><br>
+            <b>It's a Barbarian's World</b>
+            <br><br>
+            What sparked this added interest in foreign territories had to be the two mid-19th century Opium Wars. Being produced in the midst of the second opium war, geopolitical matters and the Qing’s defeat were likely at the forefront of the mapmaker’s mind. 
+            This revised worldview brought the 1858 mapmaker into the ranks of the earliest Qing reformers like the scholar-official Wei Yuan 魏源 (1794-1857). Qing China’s defeat in the first opium war prompted Wei to publish his famed geographical atlas, the Haiguo tuzhi 海國圖志, in three editions between 1844-52. 
+            Being published for the masses,  this book popularised the image of a world of distinct competing nations, with China being just one of them. Each nation had a unique pattern of evolution in its habits, societies, and technologies. Within this world, states are expected to uphold the principle of Westphalian or national sovereignty, whereby each state holds exclusive sovereignty over its territory. The Haiguo tuzhi was the first indigenous Chinese work to assert that China had to participate in such a system. 
+            This spelt a far cry from the Sino-centric tributary system which had framed the Middle Kingdom’s foreign relations since ancient times. Under the tributary system, foreign cultures gravitated towards the Chinese civilisation while foreign envoys voluntarily presented tribute to the emperor as an act of subordination. Like Wei Yuan, our 1858 mapmaker was highly conscious of this shift from a world oriented around the hierarchical relationship between suzerain and vassal to one oriented around the balance of power between states.
+            </p> 
+          </div>
+          <div class="mapImageWrapper">
+            <img class="imageB" id="image3" src="img/mapA_29773.jpg">
+            <img class="imageB" src="img/mapB_31582.jpg" > 
+        </div>  
+      </section>
 
+
+
+    <section id="conclusion">
+      <h1>A World(view) Transformed by War</h1>
+      <h2>Conclusion</h2>
+      <div>
+        Zhuang Tingfu’s map had inspired many other 19th century maps in Qing China and Joseon Korea.  Yet, it was the 1858 Wanguo yutu that updated it most drastically to reflect the new Westphalian world order. Following the Qing’s defeat in the Opium Wars, interest in international law and Western geopolitical understandings steadily grew amongst the literati although it took a few more decades before China’s international outlook became fundamentally transformed.
+      </div>
+     <!--
+      <button class="credits">Credits</button>
+      <button class="readMore">Further Reading</button>
+     -->
+    </section>
+  </main>
+  <!--Script to zoom-->
+  <script defer type="text/javascript">
+    ;(function($) {
+      $(document).ready(function() {
+        var $img = $("#image1").imgViewer2();
+        var $img = $("#image2").imgViewer2();
+      });
+    })(jQuery);
+  </script>
 
 </body>
 </html>
+<!--Script for opacity slider
+<script>
+const sliderOpacity = document.querySelector("#sliderOpacity");
+const img = document.querySelector("#opacityImg");
+
+sliderOpacity.addEventListener('input', function(){
+  img.style.opacity = (sliderOpacity.value)/100;
+});
+</script>
+-->
+
+
